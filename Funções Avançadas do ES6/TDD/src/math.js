@@ -12,6 +12,9 @@ class Math{
     multiply(a,b){
         return a * b;
     }
+    printSum(req, res, a , b) {
+        console.log(res.load('index', a+b)); // como testar se chamou a função dentro de outra função? ferramenta sinon faz esses testes
+    }
 }
 
 module.exports = Math;
